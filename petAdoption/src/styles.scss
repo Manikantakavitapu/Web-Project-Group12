@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+*{
+
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    min-height: 100vh;
+}
+.login-form {
+width: 350px;
+margin: auto;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+
+app-login, app-signup { 
+&+ app-footer {
+#footer {
+    bottom: 0;
+}
+}
+}

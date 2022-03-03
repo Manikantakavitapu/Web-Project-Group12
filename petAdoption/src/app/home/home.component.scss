@@ -1,0 +1,44 @@
+.banner-img {
+    background-image: url(https://heartsalivevillage.org/wp-content/uploads/2019/07/adopt-dogs.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0 100px 0;
+}
+.btn-get-started {
+    background: #e71e25;
+    border: 2px solid #e71e25;
+    color: #fff;
+    &:hover {
+        background: none;
+        border-color: #fff;
+        color: #fff;
+    }
+    }
+.btn-get-started,.btn-services {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 6px;
+    transition: 0.5s;
+    margin: 0 20px 20px 0;
+    color: #fff;
+}
+.btn-services {
+    border: 2px solid #fff;
+    &:hover {
+        background: #e71e25;
+        border-color: #e71e25;
+        color: #fff;
+    }
+}
+.card {
+    img {
+        height: 300px;
+    }
+}

@@ -1,0 +1,126 @@
+.center-form {
+    -webkit-box-shadow: 0 2px 20px -8px #666;
+    -moz-box-shadow: 0 2px 20px -8px #666;
+    box-shadow: 0 2px 20px -8px #666;
+    border-radius: 5px;
+    margin: 30px auto;
+    padding: 50px 70px;
+    width: 550px;
+    line-height: 23px;
+}
+.field-container {
+    background-color: #f4f4f4;
+    height: 50px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.field-container input, .field-container select {
+    background-color: #eee;
+    float: right;
+    font-size: 15px;
+    height: 100%;
+    margin: 0;
+    padding: 5px;
+    width: calc(100% - 50px);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    border: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    -moz-box-shadow: -10px 0 0 -10px #000 inset;
+    -webkit-box-shadow: -10px 0 0 -10px #000 inset;
+    box-shadow: -10px 0 0 -10px #000 inset;
+}
+.field-container .fa {
+    background-color: #ddd;
+    color: #aaa;
+    display: block;
+    float: left;
+    font-size: 30px;
+    height: 100%;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 50px;
+    -moz-box-shadow: 10px 0 0 -10px #000 inset;
+    -webkit-box-shadow: 10px 0 0 -10px #000 inset;
+    box-shadow: 10px 0 0 -10px #000 inset;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+.field-container .succ-bar, .field-container .error-bar {
+    background-color: green;
+    display: block;
+    float: left;
+    height: 2px;
+    margin-top: -2px;
+    width: 0;
+    margin-left: 50px;
+    -webkit-transition: width .3s;
+    -moz-transition: width .3s;
+    -o-transition: width .3s;
+    transition: width .3s;
+}
+.field-container .error-bar {
+    background-color: #f00;
+}
+.field-container .error-msg {
+    clear: both;
+    color: #f00;
+    display: none;
+    font-size: 12px;
+    padding-top: 5px;
+    text-align: right;
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+}
+.field-container.auto {
+    height: auto;
+    background: 0;
+} 
+.post-new-ad textarea {
+    border: 2px solid #eee;
+    height: 150px;
+    padding: 10px;
+    width: 100%;
+    background-color: #eee;
+    font-size: 14px;
+}
+.field-container .currency {
+    color: #666;
+    line-height: 50px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.primary-btn {
+    background-color: #f3aa05;
+    -webkit-box-shadow: 0 2px 2px -2px #000;
+    -moz-box-shadow: 0 2px 2px -2px #000;
+    box-shadow: 0 2px 2px -2px #000;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #fff;
+    border: 0;
+}
+.primary-btn a, .primary-btn span[data-href] {
+    color: #fff;
+    padding: 15px;
+    display: block;
+}
