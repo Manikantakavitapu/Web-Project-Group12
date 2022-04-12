@@ -1,4 +1,4 @@
-<form class="order-form">
+<form class="order-form" *ngIf="!orderSuccess">
     <div class="form-row">
         <div class="form-group col-6">
             <label>First Name</label>
@@ -75,7 +75,7 @@
 </div>
 </form>
 
-<div class="order-success text-center">
+<div class="order-success text-center" *ngIf="orderSuccess">
     <img src="../../assets/images/green-tick-check-mark-icon-simple-style-vector-8375981.jpeg" width="100px">
     <h1>THANK YOU FOR YOUR PURCHASE</h1>
     <p>Your order number is: 1000000123.</p>
