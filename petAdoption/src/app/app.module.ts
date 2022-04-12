@@ -11,6 +11,7 @@ import { LoginComponent } from './authentication/login/login.component';
 import { SignupComponent } from './authentication/signup/signup.component';
 import { FooterComponent } from './footer/footer.component';
 import { PetDetailsComponent } from './pet-details/pet-details.component';
+import { OrderComponent } from './order/order.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PetDetailsComponent } from './pet-details/pet-details.component';
     LoginComponent,
     SignupComponent,
     FooterComponent,
-    PetDetailsComponent
+    PetDetailsComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,

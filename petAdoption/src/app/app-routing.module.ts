@@ -4,6 +4,7 @@ import { LoginComponent } from './authentication/login/login.component';
 import { SignupComponent } from './authentication/signup/signup.component';
 import { BuyerComponent } from './buyer/buyer.component';
 import { HomeComponent } from './home/home.component';
+import { OrderComponent } from './order/order.component';
 import { PetDetailsComponent } from './pet-details/pet-details.component';
 import { SellerComponent } from './seller/seller.component';
 
@@ -15,6 +16,7 @@ const routes: Routes = [
     { path:'signUp',component:SignupComponent},
     {path:'buyer',component:BuyerComponent},
     {path:'pet-details',component:PetDetailsComponent},
+    {path:'order',component:OrderComponent},
     {path:'',redirectTo:'home', pathMatch: 'full'}
 ];
 
