@@ -14,4 +14,8 @@ export class OrderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  buy() {
+    this.orderSuccess = !this.orderSuccess;
+  }
+
 }
