@@ -1,5 +1,14 @@
 <!-- <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery> -->
-  <div class="container my-4">
+  <div class="container my-4 mt-4">
+    <div class="text-right">
+      <label>Sort By:</label>
+    <select>
+      <option>Distance</option>
+      <option>Price</option>
+      <option>Gender</option>
+    </select>
+    </div>
+
       <div class="row">
           <div class="col-4 mt-3">
               <div class="card" >
@@ -11,16 +20,7 @@
                   </div>
                 </div>
           </div>
-          <div class="col-4 mt-3" routerLink="/pet-details">
-            <div class="card" >
-                <img src="../../assets/images/dog3_1.png" class="card-img-top">
-                <div class="card-body">
-                  <h4 class="card-title">Melo</h4>
-                  <!-- <p class="card-text">Details Of the Dog</p> -->
-                  <a href="#" routerlink="/pet-details" type="button" class="btn btn-success">Adopt</a>
-                </div>
-              </div>
-        </div>
+     
           <div class="col-4 mt-3">
               <div class="card">
                   <img src="../../assets/images/cat1_1.png" class="card-img-top">
@@ -75,7 +75,7 @@
                   </div>
                 </div>
           </div>
-          <div class="col-4 mt-3">
+          <div class="col-4 mt-3" (click)=Show()>
             <div class="card">
                 <img src="../../assets/images/dog4_1.png" class="card-img-top">
 
@@ -86,6 +86,16 @@
                 </div>
               </div>
         </div>
+        <div class="col-4 mt-3" routerLink="/pet-details">
+          <div class="card" >
+              <img src="../../assets/images/dog3_1.png" class="card-img-top">
+              <div class="card-body">
+                <h4 class="card-title">Melo</h4>
+                <!-- <p class="card-text">Details Of the Dog</p> -->
+                <a  href="/pet-details" type="button" class="btn btn-success">Buy</a>
+              </div>
+            </div>
+      </div>
       </div>
   </div>
   

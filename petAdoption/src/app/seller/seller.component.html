@@ -1,9 +1,9 @@
 <div class="post-new-ad center-form">
-    <form onsubmit="return false;" id="post-new-form" class="error">
-        <div class="title">Post new ad</div>
+    <form id="post-new-form">
+        <div class="title mb-2">Enter your Pet Details</div>
         <!--<div class="warn-box"><span class="fa fa-warning"></span>Are you scammer?. Don't waste your time here. We will block your ads.</div>-->
         <div class="field-container"><input type="text" id="post-ad-title" maxlength="70" name="title"
-                placeholder="Enter ad title" autocomplete="off"><span class="fa fa-edit"></span><span
+                placeholder="Enter pet title" autocomplete="off"><span class="fa fa-edit"></span><span
                 class="succ-bar"></span><span class="error-bar"></span><span class="error-msg">Please enter title
                 between 10 to 50 characters</span></div>
         <div class="field-container"><select id="post-ad-pet" name="p_c_id" class="pets-list" data-default="1"
@@ -723,16 +723,47 @@
                 class="currency" for="post-ad-price">USD</label><span class="succ-bar"></span><span
                 class="error-bar"></span><span class="error-msg">Please enter valid amount</span></div>
 
+                <label style="position: relative;top: 43px;z-index: 99;">sex</label>
+                <div class="field-container">
+                    <select>
+                        <option></option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+                
+                <div class="field-container">
+                  <input type="text" placeholder="Enter Age">
+                </div>
+                <div class="field-container">
+                    <input type="text" placeholder="Enter Location">
+                  </div>
 
         <label>Image Upload</label>
         <div class="field-container">
-            <input type="file">
+            <input type="file" multiple>
         </div>
         <div class="field-container auto"><textarea id="post-ad-desc" name="desc" maxlength="5000" class="txt-area"
                 placeholder="Please enter long unique description" autocomplete="off"></textarea><span
                 class="succ-bar"></span><span class="error-bar"></span><span class="error-msg">Minimum 50
                 characters</span></div>
         <div class="server-error hide" id="post-ad-server-error"></div>
-        <div class="primary-btn"><a href="#" id="post-new-ad-submit"><span class="label">Submit</span></a></div>
+        <div class="primary-btn"><a href="#" id="post-new-ad-submit" data-toggle="modal" data-target="#exampleModal"><span class="label" (click)="submit()"   >Submit</span></a></div>
     </form>
 </div>
+
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+     
+        <div class="modal-body">
+          We have listed your pet Successfully!!!
+        </div>
+      </div>
+    </div>
+  </div>
+  

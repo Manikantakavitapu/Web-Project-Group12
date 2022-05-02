@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { CommonModule } from '@angular/common';  
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SellerComponent } from './seller/seller.component';
@@ -13,6 +13,8 @@ import { FooterComponent } from './footer/footer.component';
 import { PetDetailsComponent } from './pet-details/pet-details.component';
 import { OrderComponent } from './order/order.component';
 import { PetDetailComponent } from './pet-detail/pet-detail.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { PetDetailComponent } from './pet-detail/pet-detail.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    CommonModule,
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ServiceService} from '../service.service';
+
 
 @Component({
   selector: 'app-buyer',
@@ -6,10 +8,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./buyer.component.scss']
 })
 export class BuyerComponent implements OnInit {
+  show=false;
 
-  constructor() { }
+  constructor(private serviceService:ServiceService) { }
 
   ngOnInit(): void {
+ this.getPets();
+  }
+
+  getPets(){
+    this.serviceService.getpets().subscribe(data => {
+      console.log(data);
+    })
+  }
+  Show() {
+  this.show = true;
   }
 
 }

@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class OrderComponent implements OnInit {
 
   orderSuccess= false;
+  fomratedAdress:string ='';
 
   constructor() { }
 
